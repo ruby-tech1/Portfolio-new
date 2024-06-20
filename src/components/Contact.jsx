@@ -1,8 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Contact = ({ icon, text, href }) => {
+const Contact = ({ icon, text, href, delay }) => {
   return (
-    <a href={href} className="contact" target="_blank">
+    <a
+      href={href}
+      className="contact"
+      target="_blank"
+      data-aos="fade-right"
+      data-aos-delay={(delay + 1) * 100}
+    >
       <FontAwesomeIcon icon={icon} />
       <p>{text}</p>
     </a>

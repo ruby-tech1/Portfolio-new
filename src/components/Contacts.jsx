@@ -12,8 +12,8 @@ const Contacts = ({ contacts }) => {
         <h2 className="contact-text-2">do you have an idea in mind?</h2>
       </div>
       <div className="contacts">
-        {contact.map((item) => {
-          return <Contact key={item.id} {...item} />;
+        {contact.map((item, index) => {
+          return <Contact key={item.id} {...item} delay={index} />;
         })}
       </div>
     </div>
