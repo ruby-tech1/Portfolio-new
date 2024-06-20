@@ -24,7 +24,7 @@ main {
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   letter-spacing: 3px;
   display: flex;
   row-gap: 7px;
@@ -34,6 +34,12 @@ main {
 
 .logo span{
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .logo{
+    font-size: 2.2rem;
+  }
 }
 
 .nav-links li {
@@ -274,8 +280,14 @@ main {
   align-items: center;
   letter-spacing: 2px;
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   color: var(--white);
+}
+
+@media screen and (min-width: 768px){
+  .section-title{
+    margin-bottom: 3rem;
+  }
 }
 
 .section-title-right {
@@ -343,9 +355,10 @@ main {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
-  margin: 6rem 0;
+  margin: 3rem 0;
   align-items: start;
 }
+
 
 
 .skill {
@@ -395,6 +408,7 @@ main {
   .skills {
     grid-template-columns: repeat(2, 1fr);
     align-items: start;
+    margin: 6rem 0;
   }
 }
 
@@ -408,14 +422,23 @@ main {
 
 .techs {
   width: 100%;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .tech-carousel {
   overflow: hidden;
-  padding: 1rem;
   /* width: 100%; */
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .tech-carousel{
+    padding: 1rem;
+  }
+
+  .techs{
+    margin: 2rem 0;
+  }
 }
 
 /* .tech-carousel::before {
@@ -490,8 +513,14 @@ background: var(--grey-800);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-    margin: 6rem 0;
+    margin: 3rem 0 4rem 0;
     align-items: start;
+}
+
+@media screen and (min-width: 768px) {
+  .projects{
+    margin: 6rem 0;
+  }
 }
 
 
