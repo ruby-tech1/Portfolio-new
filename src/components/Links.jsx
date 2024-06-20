@@ -37,7 +37,7 @@ export const SocialLinks = ({ socials }) => {
 
 export const ScrollDown = () => {
   return (
-    <div className="scroll-down" data-aos="fade-down">
+    <div className="scroll-down">
       <p className="text">scroll</p>
       <div className="scroll-down-icon">
         <FontAwesomeIcon icon="fa-solid fa-arrow-down" />
