@@ -1,6 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useState } from "react";
 
-const Project = ({ name, text, image, code, website, delay }) => {
+const Project = ({ name, text, image, code, website, tech, delay }) => {
+  const [techUsed, setTechUsed] = useState(tech);
+
+  const techSplit = () => {
+    if (techUsed !== tech) return;
+    let temp = techUsed.split(" ").join(" | ");
+    setTechUsed(temp);
+  };
+
+  useEffect(() => {
+    techSplit();
+  }, []);
+
   return (
     <div
       className="project"
@@ -33,6 +46,7 @@ const Project = ({ name, text, image, code, website, delay }) => {
       </div>
       <h2>{name}</h2>
       <p>{text}</p>
+      <p className="tech-used text-small">{techUsed}</p>
     </div>
   );
 };

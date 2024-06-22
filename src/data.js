@@ -103,6 +103,7 @@ export const projects = [
     image: quiz,
     code: "https://github.com/ruby-tech1/Exam-System",
     website: "https://www.google.com/",
+    tech: "react nodejs mongodb tailwindcss",
   },
   {
     id: 2,
@@ -111,6 +112,7 @@ export const projects = [
     image: quiz,
     code: "https://github.com/ruby-tech1/Exam-System",
     website: "https://www.google.com/",
+    tech: "react nodejs mongodb tailwindcss",
   },
   {
     id: 3,
@@ -119,6 +121,7 @@ export const projects = [
     image: quiz,
     code: "https://github.com/ruby-tech1/Exam-System",
     website: "https://www.google.com/",
+    tech: "react nodejs mongodb tailwindcss",
   },
 ];
 
