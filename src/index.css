@@ -155,13 +155,12 @@ main {
 }
 
 .social-links {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: fixed;
   bottom: 3rem;
   padding: 2.5rem;
   row-gap: 20px;
-  opacity: 0;
 }
 
 .social-links a {
@@ -178,7 +177,7 @@ main {
 
 @media screen and (min-width: 768px) {
   .social-links {
-    opacity: 1;
+    display: flex;
   }
 }
 
