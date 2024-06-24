@@ -18,7 +18,7 @@ const About = ({ skills, techs }) => {
     document.body.removeChild(link);
   };
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="bio">
         <SectionHeader id={"about-title"} text={"about me"} position={true} />
         <div className="about-text" data-aos="fade-up">
@@ -39,7 +39,10 @@ const About = ({ skills, techs }) => {
           data-aos="fade-down"
         >
           download CV
-          <FontAwesomeIcon icon="fa-solid fa-arrow-down" />
+          <FontAwesomeIcon
+            icon="fa-solid fa-arrow-down"
+            className="about-download-icon"
+          />
         </button>
       </div>
       <div className="skills-section">

@@ -8,8 +8,26 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--grey-800);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--primary-600);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-500);
+}
+
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 } /*16px*/
 
 :root {
@@ -280,3 +298,4 @@ ul {
   margin: 0 auto;
   margin-top: 1rem;
 }
+

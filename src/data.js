@@ -16,17 +16,17 @@ export const socials = [
 export const navLinks = [
   {
     id: 1,
-    href: "/about",
+    href: "about",
     text: "about",
   },
   {
     id: 2,
-    href: "/projects",
+    href: "projects",
     text: "project",
   },
   {
     id: 3,
-    href: "/contact",
+    href: "contact",
     text: "contact",
   },
 ];

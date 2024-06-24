@@ -7,7 +7,7 @@ const Skill = ({ icon, title, text, delay }) => {
       data-aos={delay % 2 === 0 ? "fade-down" : "fade-up"}
       data-aos-delay={delay}
     >
-      <FontAwesomeIcon icon={icon} />
+      <FontAwesomeIcon icon={icon} className="skill-icon" />
       <h3>{title}</h3>
       <p>{text}</p>
     </article>

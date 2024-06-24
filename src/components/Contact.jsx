@@ -9,7 +9,7 @@ const Contact = ({ icon, text, href, delay }) => {
       data-aos="fade-right"
       data-aos-delay={(delay + 1) * 100}
     >
-      <FontAwesomeIcon icon={icon} />
+      <FontAwesomeIcon icon={icon} className="contact-icon" />
       <p>{text}</p>
     </a>
   );

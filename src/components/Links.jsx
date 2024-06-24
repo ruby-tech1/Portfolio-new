@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const NavLinks = ({ navLinks }) => {
+export const NavLinks = ({ navLinks, nav }) => {
   const [link, setLink] = useState(navLinks);
   return (
-    <ul className="nav-links">
+    <ul className="nav-links" id={nav}>
       {link.map((link) => {
         const { id, href, text } = link;
         return (
           <li key={id} className="nav-link">
-            <a href={href}>{text}</a>
+            <a href={`#${href}`}>{text}</a>
           </li>
         );
       })}
@@ -40,7 +40,10 @@ export const ScrollDown = () => {
     <div className="scroll-down">
       <p className="text">scroll</p>
       <div className="scroll-down-icon">
-        <FontAwesomeIcon icon="fa-solid fa-arrow-down" />
+        <FontAwesomeIcon
+          icon="fa-solid fa-arrow-down"
+          className="scroll-down-icon-svg"
+        />
       </div>
     </div>
   );

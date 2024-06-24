@@ -10,6 +10,7 @@ main {
   background: transparent;
   width: 100%;
   display: flex;
+  /* align-items: center; */
   justify-content: space-between;
   position: fixed;
   padding: 2rem 1.5rem;
@@ -24,7 +25,7 @@ main {
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   letter-spacing: 3px;
   display: flex;
   row-gap: 7px;
@@ -46,8 +47,45 @@ main {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 1.8rem;
+  }
+}
+
+.burger {
+  position: absolute;
+  right: 2rem;
+  font-size: 2rem;
+  background: transparent;
+  color: var(--white);
+  border: none;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.nav-links {
+  position: absolute;
+  top: 0;
+  right: -100rem;
+  width: 70vw;
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grey-700);
+  z-index: 999;
+  transition: right 400ms;
+}
+
+#nav-links-show {
+  right: 0;
+}
+
 .nav-links li {
-  margin-bottom: 1.3rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -88,6 +126,28 @@ main {
   opacity: 100%;
 }
 
+
+
+@media screen and (min-width: 992px) {
+  .nav-links{
+      display: block;
+      position: none;
+      background: none;
+      height: auto;
+      width: auto;
+      top: 2rem;
+      right: 2rem;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .nav-links li {
+    margin-bottom: 1.3rem;
+    font-size: 1rem;
+  }
+}
 
 .footer {
   width: 100%;
@@ -249,7 +309,7 @@ main {
   animation: scroll-down 2s infinite ease-in-out;
 }
 
-.scroll-down-icon svg  {
+.scroll-down-icon-svg {
   transform: rotate(-90deg);
 }
 
@@ -369,7 +429,7 @@ main {
   margin: 2rem 0;
 }
 
-.about-download-btn svg {
+.about-download-icon {
   margin-left: 10px;
 }
 
@@ -405,7 +465,7 @@ main {
   background: var(--primary-500);
 }
 
-.skill svg {
+.skill-icon {
   font-size: 3rem;
   margin: 1.5rem 0 0.5rem 0 ;
   color: var(--primary-500);
@@ -413,7 +473,7 @@ main {
   transition: color 300ms, transform 300ms;
 }
 
-.skill:hover  svg{
+.skill:hover  .skill-icon{
   color: var(--white);
   transform: scale(1);
 }
@@ -533,7 +593,7 @@ background: var(--grey-800);
   }
 }
 
-.tech-carousel svg {
+.carousel-icon{
   font-size: 5rem;
 }
 
@@ -775,13 +835,13 @@ background: var(--grey-800);
   font-weight: 600;
 }
 
-.contact  svg {
+.contact-icon{
   border-radius: 50%;
   padding: 1rem;
   transition: background 300ms;
 }
 
-.contact:hover svg{
+.contact:hover .contact-icon{
   background: var(--primary-500);
 }
 
