@@ -1,5 +1,5 @@
 main {
-  width: var(--view-width);
+  /* width: var(--view-width); */
   position: relative;
   display: flex;
   flex-direction: column;
