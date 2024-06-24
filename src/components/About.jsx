@@ -4,19 +4,11 @@ import SectionHeader from "./SectionHeader";
 import { useState } from "react";
 import Skill from "./Skill";
 import Techs from "./Techs";
+import DownloadBtn from "./DownloadBtn";
 
 const About = ({ skills, techs }) => {
   const [skill, setSkill] = useState(skills);
   const [tech, setTech] = useState(techs);
-  const downloadResume = () => {
-    const url = "/assets/resume.pdf";
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "Alabi Reuben Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
   return (
     <section className="about" id="about">
       <div className="bio">
@@ -32,18 +24,7 @@ const About = ({ skills, techs }) => {
           learning to keep up with the newest trends and technology. I'm eager
           to help create cutting edge Web apps and products.
         </div>
-        <button
-          type="button"
-          className="btn about-download-btn"
-          onClick={() => downloadResume()}
-          data-aos="fade-down"
-        >
-          download CV
-          <FontAwesomeIcon
-            icon="fa-solid fa-arrow-down"
-            className="about-download-icon"
-          />
-        </button>
+        <DownloadBtn />
       </div>
       <div className="skills-section">
         <SectionHeader id={"skils-header"} text={"skills"} position={false} />
