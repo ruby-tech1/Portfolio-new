@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const NavLinks = ({ navLinks, nav }) => {
+export const NavLinks = ({ navLinks, nav, toggle }) => {
   const [link, setLink] = useState(navLinks);
   return (
     <ul className="nav-links" id={nav}>
@@ -9,7 +9,9 @@ export const NavLinks = ({ navLinks, nav }) => {
         const { id, href, text } = link;
         return (
           <li key={id} className="nav-link">
-            <a href={`#${href}`}>{text}</a>
+            <a href={`#${href}`} onClick={() => toggle()}>
+              {text}
+            </a>
           </li>
         );
       })}

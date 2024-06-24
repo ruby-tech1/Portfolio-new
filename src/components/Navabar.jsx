@@ -5,6 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navabar = ({ navLinks }) => {
   const [nav, setNav] = useState(false);
+
+  const toggleMenu = () => {
+    setNav(false);
+  };
+
   return (
     <nav className="nav-bar">
       <Logo />
@@ -18,6 +23,7 @@ const Navabar = ({ navLinks }) => {
       <NavLinks
         navLinks={navLinks}
         nav={nav ? "nav-links-show" : "nav-links-hide"}
+        toggle={toggleMenu}
       />
     </nav>
   );
