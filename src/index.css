@@ -1,9 +1,10 @@
 main {
-  /* width: 100vw; */
+  width: var(--view-width);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .nav-bar{
@@ -601,7 +602,7 @@ background: var(--grey-800);
   margin: 3rem 0;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .project-section {
     width: 80%;
   }
@@ -610,10 +611,10 @@ background: var(--grey-800);
 
 @media screen and (min-width: 992px) {
   .project-section {
-    width: 85%;
+    width: 90%;
   }
 
-}
+} */
 
 .projects {
     display: grid;
