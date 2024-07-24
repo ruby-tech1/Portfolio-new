@@ -1,16 +1,25 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { skills, techs } from "../data";
 import SectionHeader from "./SectionHeader";
-import { useState } from "react";
 import Skill from "./Skill";
 import Techs from "./Techs";
 import DownloadBtn from "./DownloadBtn";
+import { useEffect, useState } from "react";
+import { useElementOnScreen } from "../hooks/useElementOnScreen";
 
-const About = ({ skills, techs }) => {
+const About = ({ skills, techs, visibleElement, setVisibleElement }) => {
   const [skill, setSkill] = useState(skills);
   const [tech, setTech] = useState(techs);
+  const { containerRef, isVisible } = useElementOnScreen({
+    root: null,
+    rootMargin: "0px",
+    threshold: [0.25, 0.5, 0.75],
+  });
+
+  useEffect(() => {
+    setVisibleElement({ ...visibleElement, about: isVisible });
+  }, [isVisible]);
+
   return (
-    <section className="about" id="about">
+    <section className="about" id="about" ref={containerRef}>
       <div className="bio">
         <SectionHeader id={"about-title"} text={"about me"} position={true} />
         <div className="about-text" data-aos="fade-up">

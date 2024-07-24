@@ -1,15 +1,19 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const NavLinks = ({ navLinks, nav, toggle }) => {
+export const NavLinks = ({ navLinks, nav, visibleElement }) => {
   const [link, setLink] = useState(navLinks);
+
   return (
     <ul className="nav-links" id={nav}>
       {link.map((link) => {
         const { id, href, text } = link;
         return (
-          <li key={id} className="nav-link">
-            <a href={`#${href}`} onClick={() => toggle()}>
+          <li key={id}>
+            <a
+              href={`#${href}`}
+              className={visibleElement[text] ? "link-active" : "link-inactive"}
+            >
               {text}
             </a>
           </li>

@@ -96,10 +96,10 @@ main {
   cursor: pointer;
   position: relative;
   padding-bottom: 0.4rem;
-  opacity: 0.5;
+  
 }
 
-.nav-link a::after {
+.nav-links a::after {
   content: '';
     position: absolute;
     bottom: 0;
@@ -113,19 +113,29 @@ main {
     transition: opacity 500ms, transform 300ms;
 }
 
-.nav-link a:hover {
-  opacity: 100%;
+.nav-links a:hover {
+  opacity: 1;
 }
 
-.nav-link a:hover::after {
+.nav-links a:hover::after {
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
   transform: scale(1);
 }
 
-.nav-links li:nth-child(1) a {
-  opacity: 100%;
+.link-inactive {
+  opacity: 0.5;
 }
+
+.link-active{
+  opacity: 1;
+}
+/* 
+.link-active::after {
+  opacity: 1 !important;
+  transform: translate3d(0, 0.2em, 0) !important;
+  transform: scale(1) !important;
+} */
 
 
 
