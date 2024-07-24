@@ -20,6 +20,7 @@ const Navabar = ({ navLinks, visibleElement }) => {
         navLinks={navLinks}
         nav={nav ? "nav-links-show" : "nav-links-hide"}
         visibleElement={visibleElement}
+        setNav={setNav}
       />
     </nav>
   );

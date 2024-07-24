@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const NavLinks = ({ navLinks, nav, visibleElement }) => {
+export const NavLinks = ({ navLinks, nav, visibleElement, setNav }) => {
   const [link, setLink] = useState(navLinks);
 
   return (
@@ -13,6 +13,7 @@ export const NavLinks = ({ navLinks, nav, visibleElement }) => {
             <a
               href={`#${href}`}
               className={visibleElement[text] ? "link-active" : "link-inactive"}
+              onClick={() => setNav(false)}
             >
               {text}
             </a>
