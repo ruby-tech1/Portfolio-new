@@ -1,4 +1,6 @@
 import quiz from "./assets/quiz.webp";
+import ecommercee from "./assets/ecommerce.png";
+import jobs from "./assets/jobs.png";
 
 export const socials = [
   {
@@ -34,21 +36,21 @@ export const navLinks = [
 export const skills = [
   {
     id: 1,
-    icon: "fa-solid fa-pen-nib",
+    icon: "fa-solid fa-palette",
     title: "graphic designer",
     text: "Proficiency in graphic design software including Canva, Adobe Photoshop, and Adobe Ilustrator to create logos, social media graphics, flyers, and other marketing materials",
   },
   {
     id: 2,
-    title: "web developer",
-    icon: "fa-solid fa-code",
-    text: "As a skilled web developer, I specialize in creating modern, responsive, and user-friendly websites and web applications with HTML5, CSS3, VanillaJS, ReactJS and TailwindCSS.",
+    title: "front-end development",
+    icon: "fa-solid fa-pen-nib",
+    text: "As a skilled frontend developer, proficient in crafting responsive and interactive user interfaces using HTML5, CSS, vanilla JavaScript, Tailwind CSS, and React, delivering seamless and visually appealing web experiences.",
   },
   {
     id: 3,
-    icon: "fa-solid fa-palette",
-    title: "Web Designer",
-    text: "I possesy user experience (UX) design skills including user research, wireframing, prototyping, and usability testing to create user-friendly interfaces with canva and figma",
+    icon: "fa-solid fa-code",
+    title: "backend development",
+    text: "On the server side, experience in building robust server-side applications using Node.js and Express, with proficiency in designing and implementing efficient databases with MongoDB for scalable and performant web solutions.",
   },
 ];
 
@@ -102,26 +104,26 @@ export const projects = [
     text: "A web application that allows user to set and attempt quiz.",
     image: quiz,
     code: "https://github.com/ruby-tech1/Exam-System",
-    website: "https://www.google.com/",
-    tech: "react nodejs mongodb tailwindcss",
+    website: "https://exam-system-e83d232f0858.herokuapp.com/",
+    tech: "react nodejs express mongodb tailwindcss",
   },
   {
     id: 2,
-    name: "exam system",
-    text: "A web application that allows user to set and attempt quiz.",
-    image: quiz,
-    code: "https://github.com/ruby-tech1/Exam-System",
-    website: "https://www.google.com/",
-    tech: "react nodejs mongodb tailwindcss",
+    name: "jobster",
+    text: "A web application that allows users or job seekers to manage job applications",
+    image: jobs,
+    code: "https://github.com/ruby-tech1/Jobs-Api",
+    website: "https://jobs.v3ga.shop/",
+    tech: "react nodejs expressjs mongodb",
   },
   {
     id: 3,
-    name: "exam system",
-    text: "A web application that allows user to set and attempt quiz.",
-    image: quiz,
+    name: "e-commerce api",
+    text: "The backend for an e-commerce web app including the api endpoints and other features",
+    image: ecommercee,
     code: "https://github.com/ruby-tech1/Exam-System",
-    website: "https://www.google.com/",
-    tech: "react nodejs mongodb tailwindcss",
+    website: "https://ecommerce-api01-1f7e97e065f9.herokuapp.com/",
+    tech: "nodejs mongodb stripe express",
   },
 ];
 
