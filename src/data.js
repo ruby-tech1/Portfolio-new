@@ -1,15 +1,17 @@
 import quiz from "./assets/quiz.webp";
 import ecommercee from "./assets/ecommerce.png";
 import jobs from "./assets/jobs.png";
+import shorti from "./assets/shorti.png";
+import { nanoid } from "nanoid";
 
 export const socials = [
   {
-    id: 1,
+    id: nanoid(),
     href: "https://www.linkedin.com/in/rubytech",
     svg: "fa-brands fa-linkedin-in",
   },
   {
-    id: 2,
+    id: nanoid(),
     href: "https://github.com/ruby-tech1",
     svg: "fa-brands fa-github",
   },
@@ -17,17 +19,17 @@ export const socials = [
 
 export const navLinks = [
   {
-    id: 1,
+    id: nanoid(),
     href: "about",
     text: "about",
   },
   {
-    id: 2,
+    id: nanoid(),
     href: "projects",
     text: "project",
   },
   {
-    id: 3,
+    id: nanoid(),
     href: "contact",
     text: "contact",
   },
@@ -35,63 +37,63 @@ export const navLinks = [
 
 export const skills = [
   {
-    id: 1,
+    id: nanoid(),
     icon: "fa-solid fa-palette",
     title: "graphic designer",
     text: "Proficiency in graphic design software including Canva, Adobe Photoshop, and Adobe Ilustrator to create logos, social media graphics, flyers, and other marketing materials",
   },
   {
-    id: 2,
+    id: nanoid(),
     title: "front-end development",
     icon: "fa-solid fa-pen-nib",
     text: "As a skilled frontend developer, proficient in crafting responsive and interactive user interfaces using HTML5, CSS, vanilla JavaScript, Tailwind CSS, and React, delivering seamless and visually appealing web experiences.",
   },
   {
-    id: 3,
+    id: nanoid(),
     icon: "fa-solid fa-code",
     title: "backend development",
-    text: "On the server side, experience in building robust server-side applications using Node.js and Express, with proficiency in designing and implementing efficient databases with MongoDB for scalable and performant web solutions.",
+    text: "On the server side, experience in building robust server-side applications using Node.js and Express, with proficiency in designing and implementing efficient databases with MongoDB and PostgreSQL for scalable and performant web solutions.",
   },
 ];
 
 export const techs = [
   {
-    id: 1,
+    id: nanoid(),
     icon: "fa-brands fa-react",
     text: "react js",
   },
   {
-    id: 2,
+    id: nanoid(),
     icon: "fa-brands fa-node",
     text: "node js",
   },
   {
-    id: 3,
+    id: nanoid(),
     icon: "",
     text: "mongodb",
   },
   {
-    id: 4,
+    id: nanoid(),
     icon: "fa-brands fa-git-alt",
     text: "git",
   },
   {
-    id: 5,
+    id: nanoid(),
     icon: "fa-brands fa-github",
     text: "github",
   },
   {
-    id: 6,
+    id: nanoid(),
     icon: "fa-brands fa-html5",
     text: "html",
   },
   {
-    id: 7,
+    id: nanoid(),
     icon: "fa-brands fa-css3",
     text: "css",
   },
   {
-    id: 8,
+    id: nanoid(),
     icon: "fa-brands fa-square-js",
     text: "javascript",
   },
@@ -99,7 +101,7 @@ export const techs = [
 
 export const projects = [
   {
-    id: 1,
+    id: nanoid(),
     name: "exam system",
     text: "A web application that allows user to set and attempt quiz.",
     image: quiz,
@@ -108,7 +110,7 @@ export const projects = [
     tech: "react nodejs express mongodb tailwindcss",
   },
   {
-    id: 2,
+    id: nanoid(),
     name: "jobster",
     text: "A web application that allows users or job seekers to manage job applications",
     image: jobs,
@@ -117,7 +119,7 @@ export const projects = [
     tech: "react nodejs expressjs mongodb",
   },
   {
-    id: 3,
+    id: nanoid(),
     name: "e-commerce api",
     text: "The backend for an e-commerce web app including the api endpoints and other features",
     image: ecommercee,
@@ -125,26 +127,35 @@ export const projects = [
     website: "https://ecommerce-api01-1f7e97e065f9.herokuapp.com/",
     tech: "nodejs mongodb stripe express",
   },
+  {
+    id: nanoid(),
+    name: "shorti",
+    text: "This is a web application that allows users to shorten long urls",
+    image: shorti,
+    code: "https://github.com/ruby-tech1/shorti",
+    website: "https://shorti-vga1.onrender.com/",
+    tech: "react nodejs mongodb express",
+  },
 ];
 
 export const stats = [
   {
-    id: 1,
+    id: nanoid(),
     number: 100,
     title: "linkedin connections",
   },
   {
-    id: 2,
+    id: nanoid(),
     number: 10,
     title: "projects worked on",
   },
   {
-    id: 3,
+    id: nanoid(),
     number: 3,
     title: "certifications",
   },
   {
-    id: 4,
+    id: nanoid(),
     number: 1,
     title: "years experience",
   },
@@ -152,19 +163,19 @@ export const stats = [
 
 export const contacts = [
   {
-    id: 1,
+    id: nanoid(),
     icon: "fa-solid fa-paper-plane",
     text: "send me a message",
     href: "https://wa.link/6tkxq1",
   },
   {
-    id: 2,
+    id: nanoid(),
     icon: "fa-solid fa-envelope",
     text: "email me",
     href: "mailto:reubenalabi@gmail.com",
   },
   {
-    id: 3,
+    id: nanoid(),
     icon: "fa-brands fa-linkedin",
     text: "linkedin",
     href: "https://www.linkedin.com/in/rubytech",
