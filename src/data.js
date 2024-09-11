@@ -52,7 +52,7 @@ export const skills = [
     id: nanoid(),
     icon: "fa-solid fa-code",
     title: "backend development",
-    text: "On the server side, experience in building robust server-side applications using Node.js and Express, with proficiency in designing and implementing efficient databases with MongoDB and PostgreSQL for scalable and performant web solutions.",
+    text: "On the server side, experience in building robust server-side applications using Node.js, Express, Java and SpringBoot, with proficiency in designing and implementing efficient databases with MongoDB and PostgreSQL for scalable and performant web solutions.",
   },
 ];
 
@@ -141,7 +141,7 @@ export const projects = [
 export const stats = [
   {
     id: nanoid(),
-    number: 100,
+    number: 200,
     title: "linkedin connections",
   },
   {
@@ -156,7 +156,7 @@ export const stats = [
   },
   {
     id: nanoid(),
-    number: 1,
+    number: 2,
     title: "years experience",
   },
 ];
